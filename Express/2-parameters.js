@@ -3,10 +3,6 @@ const app = express();
 const port = 3000;
 
 //app.get or app.post or app.put or app.delete(path,handler)
-app.get("/", (req, res) => {
-  res.send("Hello World22!")
-})
-
 app.get("/about", (req, res) => {
   res.send("Hello about us!")
 })

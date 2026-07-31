@@ -1,4 +1,4 @@
-//static make public file to public expect backen source code
+//static make public file to public expect backend source code working as a middle ware
 
 const express = require("express");
 const app = express();
@@ -9,7 +9,7 @@ app.use(express.static('public'));
 //app.get or app.post or app.put or app.delete(path,handler) 
 
 app.get("/", (req, res) => {
-  res.send("Hello World of static!");
+  res.send("Hello World this is the file of static!");
 });
 
 app.get("/about", (req, res) => {

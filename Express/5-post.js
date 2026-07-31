@@ -6,7 +6,7 @@ app.use(express.static('public'));
 
 //app.get or app.post or app.put or app.delete(path,handler)
 app.get('/', (req, res) => {
-  res.send('Hello World21!');
+  res.send('Hello World!');
 });
 
 app.post('/', (req, res) => {

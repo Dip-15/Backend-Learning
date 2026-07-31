@@ -11,10 +11,6 @@ app.get("/blog", (req, res) => {
   res.send("Hello blog tell the truth!")
 })
 
-app.get("/blog/:slug", (req, res) => {
-  res.send(`Hello ${req.params.slug}`)
-})
-
 // app.get("/blog/intro-js", (req, res) => {
 //   res.send("Hello blog tell me about js");
 // });
@@ -22,6 +18,15 @@ app.get("/blog/:slug", (req, res) => {
 // app.get("/blog/intro-python", (req, res) => {
 //   res.send("Hello blog tell me about pythonk");
 // });
+
+app.get("/blog/:slug", (req, res) => {
+  res.send(`Hello ${req.params.slug} how are you`)
+})
+
+// app.get("/blog/:slug/:sum", (req, res) => {
+//   res.send(`Hello ${req.params.slug} and ${req.params.sum} how are you`)
+// })
+//set the endpoints req.params is a object
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

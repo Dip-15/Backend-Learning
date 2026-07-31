@@ -1,8 +1,9 @@
-var slugify = require('slugify')
+import slugify from 'slugify';
+import{createServer} from 'node:http';
 
-let a = slugify('some string') // some-string
-console.log(a)
+let a = slugify('some string'); // some-string
+console.log(a);
 
 // if you prefer something other than '-' as separator
 let b = slugify('some8^&@3#123 string', '#')  // some_string
-console.log(b)
+console.log(b);

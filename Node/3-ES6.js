@@ -1,5 +1,5 @@
-// import {a,b} from "./3-myModule.js"
-// console.log( a, b )
+// import {a,b,e} from "./3-myModule.js"
+// console.log( a, b, e )
 
-import sum from "./3-myModule.js";
-console.log(sum)
+import Harry from "./3-myModule.js";
+console.log(Harry)

@@ -6,6 +6,7 @@
 
 let obj;
 export default obj = {
-    x: 5 ,
+    x: 5,
     y: 7
-}//default exports
+}
+//default exports so it can imported by any name expect obj

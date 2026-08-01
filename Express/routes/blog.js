@@ -1,20 +1,20 @@
-//blog.js handel all blogs from routs.js for better organization
+//blog.js handel all blogs from  expressRouter for better organization
 
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 // define the home page route
-router.get('/', (req, res) => {
-  res.send('Blog home page');
+router.get("/", (req, res) => {
+  res.send("Blog home page");
 });
 
 // define the about route
-router.get('/about', (req, res) => {
-  res.send('About blog');
+router.get("/about", (req, res) => {
+  res.send("About blog");
 });
 
 // define the about route
-router.get('/blogpost/:slug', (req, res) => {
+router.get("/blogpost/:slug", (req, res) => {
   res.send(`Fetch tht blog post for ${req.params.slug}`);
 });
 

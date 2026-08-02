@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   console.log('Hey its a post request');
-  res.send('Post request send succesfully of post.js!');
+  res.send('Post request send succesfully to post.html file of public folder');
 });
 
 app.listen(port, () => {

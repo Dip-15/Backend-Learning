@@ -8,7 +8,7 @@ app.get("/about", (req, res) => {
 })
 
 app.get("/blog", (req, res) => {
-  res.send("Hello blog tell the truth!")
+  res.send("Here you can write your blog!")
 })
 
 // app.get("/blog/intro-js", (req, res) => {
@@ -16,12 +16,13 @@ app.get("/blog", (req, res) => {
 // });
 
 // app.get("/blog/intro-python", (req, res) => {
-//   res.send("Hello blog tell me about pythonk");
+//   res.send("Hello blog tell me about python");
 // });
 
 app.get("/blog/:slug", (req, res) => {
   res.send(`Hello ${req.params.slug} how are you`)
 })
+//slug is the parameter name
 
 // app.get("/blog/:slug/:sum", (req, res) => {
 //   res.send(`Hello ${req.params.slug} and ${req.params.sum} how are you`)

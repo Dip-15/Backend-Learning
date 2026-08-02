@@ -6,7 +6,7 @@ const port = 3000;
 app.get("/blog/:slug", (req, res) => {
   //for URL: http://localhost:3000/blog/lakshman?name=Krishna&age=22
   console.log(req.params); //will output{'slug: 'Krishna'}
-  console.log(req.query); //will output{ name: 'Krishna', age: '22' }
+  console.log(req.query); //will output{ name: 'Krishna', age: '22' } this is the query
   res.send(`Hello ${req.params.slug}`);
 });
  

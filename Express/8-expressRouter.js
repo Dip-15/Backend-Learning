@@ -1,10 +1,10 @@
 const express = require('express');
-const blog = require('./Routes/blog');
-
 const app = express();
 const port = 3000;
+const getBlog = require('./Routes/blog');
 
-app.use('/blog', blog);
+
+app.use('/blogg', getBlog);
 
 //app.get or app.post or app.put or app.delete(path,handler)
 app.get('/', (req, res) => {

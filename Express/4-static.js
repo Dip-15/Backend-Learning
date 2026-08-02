@@ -5,8 +5,8 @@ const app = express();
 const port = 3000;
 
 app.use(express.static('public'));
-
-//app.get or app.post or app.put or app.delete(path,handler) 
+//express.static is a bulid in middleware
+//app.use for using middleware
 
 app.get("/", (req, res) => {
   res.send("Hello World this is the file of static!");

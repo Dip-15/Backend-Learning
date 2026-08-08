@@ -1,14 +1,14 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = 3000;
-const getBlog = require('./Routes/blog');
+const getBlog = require("./Routes/blog");
 
-
-app.use('/blogg', getBlog);
+app.use("/blogg", getBlog);
+//blogg set the name of end point by user
 
 //app.get or app.post or app.put or app.delete(path,handler)
-app.get('/', (req, res) => {
-  res.send('Hello World21!');
+app.get("/", (req, res) => {
+  res.send("Hello World21!");
 });
 
 app.listen(port, () => {

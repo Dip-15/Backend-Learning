@@ -6,9 +6,9 @@ app.use(express.static("public"));
 
 //app.get or app.post or app.put or app.delete(path,handler)
 
-app.put("/sa", (req, res) => {
+app.put("/", (req, res) => {
   console.log("Hey its a put request");
-  res.send("Post request send succesfully to put.html file of public folder");
+  res.send("Put request send succesfully to put.html file of public folder");
 });
 
 app.listen(port, () => {
